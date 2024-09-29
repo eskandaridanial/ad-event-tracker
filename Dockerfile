@@ -19,7 +19,6 @@ RUN $JAVA_HOME/bin/jlink \
    --output $CUSTOM_JRE_DIR
 
 FROM alpine:latest
-RUN apk add --no-cache fontconfig ttf-dejavu
 ENV JAVA_HOME=/jre
 ENV PATH=${JAVA_HOME}/bin:${PATH}
 ENV HOME=/opt/interview
